@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react"
-
-export const useFetch = (url, searchParam, dispatcher)=>{
+import { useEffect } from "react"
+import { TableState,DetailsState } from "./App"
+export const useFetch = (url:string, searchParam:URLSearchParams, dispatcher:React.Dispatch<{
+    type: string; 
+    payload: TableState;
+}>)=>{
     useEffect(()=>{
         fetch(url)
         .then(res=>{
@@ -9,7 +12,7 @@ export const useFetch = (url, searchParam, dispatcher)=>{
             }
             return res.json();
         })
-        .then(data=>{
+        .then((data:DetailsState[])=>{
             if(searchParam.size>0){
                 const result = data.filter(curr =>{
                         for (const [key, value] of searchParam.entries()) {
@@ -21,11 +24,10 @@ export const useFetch = (url, searchParam, dispatcher)=>{
                     })
                 dispatcher({type:'UPDATE', 
                     payload:{
-                        data:result.length>0 ? result : null,
+                        data:result.length>0 ? result : [],
                         error: {error:false, msg: null},
                         loading: false
                     }})
-                //setData(result.length>0 ? result : null); 
             }
             else{
                 dispatcher({type:'UPDATE', 
@@ -34,11 +36,7 @@ export const useFetch = (url, searchParam, dispatcher)=>{
                         error: {error:false, msg: null},
                         loading: false
                     }})
-                //setData(data);
             }
-
-            // setIsLoading(false);
-            // setError({error:false,msg:null});
         })
         .catch(err=>{
             dispatcher({type:'UPDATE', 
@@ -47,10 +45,6 @@ export const useFetch = (url, searchParam, dispatcher)=>{
                         error: {error:true,msg: err.message==='error' ? `fetch error: ${url}` : err.message },
                         loading: false
                     }})
-            // console.log(err);
-            // setError({error:true,msg: err.message==='error' ? `fetch error: ${url}` : err.message });
-            // setIsLoading(false);
         })
     }, [url,searchParam])
-    //return {data, isLoading, isError}
 }

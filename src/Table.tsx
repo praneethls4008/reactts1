@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom';
 import './Table.css'
 import { contextProvider } from './App';
 import { useContext, useEffect } from 'react';
-export const Table = ({searchParam})=>{
+export const Table = (props:{searchParam:URLSearchParams})=>{
+const searchParam =props.searchParam;
    const {tableState, dispatcher} = useContext(contextProvider);
-   const {data, isLoading:isDetailsLoading, isError:isDetailsFetchError} = tableState; 
+   const {data} = tableState; 
    let details=null;
+
    if(searchParam.size>0){
     details = data.filter(curr =>{
             for (const [key, value] of searchParam.entries()) {

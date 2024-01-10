@@ -8,11 +8,12 @@ import { Details } from './Details';
 import { UserDetails } from './UserDetails';
 import { NotFound } from './NotFound';
 
-export interface DetailsState{
+export interface DetailsState extends Record<string, any>{
         "name": string,
         "age": number,
         "office": string,
-        "id": number
+        "id":  number,
+        
 }
 
 export interface TableState{
