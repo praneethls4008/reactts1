@@ -1,0 +1,101 @@
+.Nav{
+    width: 98%;
+    margin-left: 1%;
+    margin-left: 1%;
+    padding-bottom: 30px;
+    top:0;
+    position: sticky;
+    z-index: 100;
+    opacity: 1;
+}
+
+
+.Nav h1{
+   text-align: center;
+   text-decoration: underline;
+   color: white;
+}
+
+.Nav h1:hover{
+    color: white;
+    opacity: 0.7;
+ }
+
+.NavLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 10px 20px 10px 20px;
+    /* margin: 0px 20px 0px 20px; */
+    border-style: double;
+    border-radius: 10px;
+    width: 100%;
+    
+    
+}
+
+.NavLinks .NavLinkHref{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: larger;
+    padding: 0% 1% 0% 1%;
+}
+.NavLinks .NavLinkHref:hover{
+    color: white;
+    opacity: 1;
+    transform: rotateX(45deg);
+    transform: rotateY(45deg);
+    transition: ease-in;
+}
+
+.searchContainer{
+    flex-grow: 3;
+    z-index: 100;
+    width: 100%;
+    position: relative;
+}
+
+.searchInput{
+    text-align: center;
+    opacity: 0.7;
+    background-color: transparent;
+    border: rgb(249, 248, 248);
+    border-style: double;
+    border-width: 3%;
+    border-radius: 59px;
+    width: 100%; 
+    color: smoke whitesmoke;
+}
+
+.searchInput:active{
+    outline-width: 0px;
+}
+
+.searchDropDown{
+    height: 30vh;
+    overflow-y: scroll;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0%;
+    padding: 3% 2% 1% 2%;
+    width: 100%;
+    background: linear-gradient(0deg, #baa7b7, #83859d);
+    text-decoration: none;
+    color: gray;
+    overflow: hidden;
+}
+
+.searchDropDownLink{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    word-break: break-all;
+
+}
+.searchDropDownLink:hover{
+    border-color: rgb(233, 229, 229);
+    border-style: dotted;
+    border-radius: 10px;
+}

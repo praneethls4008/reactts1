@@ -1,0 +1,10 @@
+.Home{
+    color: white;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
