@@ -3,11 +3,10 @@ import { Table } from "./Table"
 import { NotFound } from "./NotFound";
 import { useContext, useEffect } from "react";
 import { contextProvider } from './App';
-import { TableState } from "./App";
 
 export const Details=()=>{
-    const [searchParam,setSearchParam] = useSearchParams();
-    const {tableState, dispatcher} = useContext(contextProvider);
+    const [searchParam] = useSearchParams();
+    const {tableState} = useContext(contextProvider);
     const {data:details, error:isError, loading:isLoading} = tableState;
     
     return (

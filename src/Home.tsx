@@ -2,13 +2,13 @@ import { useContext, useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 import './Home.css'
 import { Table } from './Table';
-import { useFetch } from './useFetch';
+import { FetchDetailsData } from './FetchDetailsData';
 import { contextProvider } from './App';
 
 export const Home = () => {
     const [searchParam,setSearchParam] = useSearchParams();
     const {tableState, dispatcher} = useContext(contextProvider);
-    useFetch('http://localhost:8000/details', searchParam, dispatcher);
+    FetchDetailsData('http://localhost:8000/details', searchParam, dispatcher);
     const {data:details, loading:isDetailsLoading, error:isDetailsFetchError} = tableState;
     return(
         <div className="Home">

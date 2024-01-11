@@ -10,15 +10,16 @@
 
 .detailRow{
     display: grid;
-    grid-template-columns: minmax(76vw,76vw) minmax(10vw,10vw) minmax(10vw,10vw);
+    grid-template-columns: minmax(64vw,64vw) minmax(10vw,10vw) minmax(10vw,10vw) minmax(5vw,5vw);
     word-wrap: break-word;
     row-gap: 10px;
     column-gap: 1vw;
     margin: 0px;
     padding: 0px;
-    .detailRowHead{
-        border-style: double;
-    }
+    
+}
+.detailRow.detailRowHead{
+    border-style: double;
 }
 
 
@@ -33,4 +34,28 @@
     color: rgb(241, 232, 232);
     cursor: pointer; 
 }
+
+.detailColumn4>button{
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.detailColumn4>button:hover{
+    cursor: pointer;
+    color: rgb(219, 210, 210);
+}
+
+.detailColumn4>button:active{
+    cursor: pointer;
+    color: rgb(219, 210, 210);
+    border-style: double;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0%;
+}
+
+
 

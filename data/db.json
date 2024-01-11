@@ -37,7 +37,7 @@
       "id": 6
     },
     {
-      "name": "radedddddddddddddddddradedddddddddddddddddradedddddddddddddddddradedddddddddddddddddradeddddddddddddddddddqn",
+      "name": "raded",
       "age": 28,
       "office": "infy",
       "id": 55
@@ -49,52 +49,16 @@
       "id": 43
     },
     {
-      "name": "redeeeeeeeeeeeeeeeeeeddy",
-      "age": 25,
-      "office": "cts",
-      "id": 54
-    },
-    {
-      "name": "saiewwwwwwwwwwwwwwwwwwe",
-      "age": 18,
-      "office": "amazon",
-      "id": 65
-    },
-    {
-      "name": "m",
-      "age": 34,
-      "office": "tcs",
-      "id": 56
-    },
-    {
       "name": "ran",
       "age": 28,
       "office": "infy",
       "id": 25
     },
     {
-      "name": "k",
-      "age": 45,
-      "office": "tcs",
-      "id": 33
-    },
-    {
       "name": "reddy",
       "age": 25,
       "office": "cts",
       "id": 44
-    },
-    {
-      "name": "saiewwwwwwwwwwwwwwwwwwwww",
-      "age": 18,
-      "office": "amazon",
-      "id": 56
-    },
-    {
-      "name": "m",
-      "age": 34,
-      "office": "tcs",
-      "id": 46
     },
     {
       "name": "sachin",
@@ -119,12 +83,6 @@
       "age": "44",
       "office": "google",
       "id": 69
-    },
-    {
-      "name": "rrttr",
-      "age": 34,
-      "office": "rtt",
-      "id": 70
     }
   ]
 }

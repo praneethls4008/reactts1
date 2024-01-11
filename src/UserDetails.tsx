@@ -6,8 +6,8 @@ import './UserDetails.css'
 
 export const UserDetails = ()=>{
     const {id} = useParams();
-    const {tableState, dispatcher} = useContext(contextProvider)
-    const {data, error, loading} = tableState; 
+    const {tableState} = useContext(contextProvider)
+    const {data} = tableState; 
     return (
         <>
         {data && data.filter(currObj => currObj.id=== Number(id)).
