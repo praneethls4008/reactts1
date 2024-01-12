@@ -22,12 +22,15 @@ export interface TableState{
     loading:boolean
 };
 
-type ContextType={
-    tableState:TableState,
-    dispatcher:React.Dispatch<{
+export type DispatcherType=React.Dispatch<{
         type: string; 
         payload: TableState;
     }>
+
+
+export type ContextType={
+    tableState:TableState,
+    dispatcher:DispatcherType
 }
 
 

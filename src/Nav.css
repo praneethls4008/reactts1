@@ -27,8 +27,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     justify-items: center;
-    padding: 10px 20px 10px 20px;
-    /* margin: 0px 20px 0px 20px; */
+    max-width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 20px 0px 20px;
     border-style: double;
     border-radius: 10px;
     max-width: 100%;
@@ -68,6 +69,7 @@
     max-width: 100%;
     min-width: 100%; 
     color: smoke whitesmoke;
+    font-size: large;
 }
 
 .searchInput:active{
@@ -84,6 +86,7 @@
     margin: 0%;
     padding: 3% 2% 1% 2%;
     max-width: 100%;
+    min-width: 100%;
     background: linear-gradient(0deg, #baa7b7, #83859d);
     text-decoration: none;
     color: gray;
