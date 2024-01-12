@@ -1,5 +1,6 @@
 .Nav{
-    width: 96%;
+    max-width: 100%;
+    min-width: 100%;
     margin-left: 1%;
     margin-right: 1%;
     padding-bottom: 30px;
@@ -30,7 +31,7 @@
     /* margin: 0px 20px 0px 20px; */
     border-style: double;
     border-radius: 10px;
-    width: 100%;
+    max-width: 100%;
     
     
 }
@@ -40,6 +41,7 @@
     text-decoration: none;
     font-size: larger;
     padding: 0% 1% 0% 1%;
+    max-width: 5%;
 }
 .NavLinks .NavLinkHref:hover{
     color: white;
@@ -52,7 +54,7 @@
 .searchContainer{
     flex-grow: 3;
     z-index: 100;
-    width: 100%;
+    max-width: 100%;
     position: relative;
 }
 
@@ -63,7 +65,8 @@
     border-style: double;
     border-width: 3%;
     border-radius: 59px;
-    width: 100%; 
+    max-width: 100%;
+    min-width: 100%; 
     color: smoke whitesmoke;
 }
 
@@ -80,7 +83,7 @@
     position: absolute;
     margin: 0%;
     padding: 3% 2% 1% 2%;
-    width: 100%;
+    max-width: 100%;
     background: linear-gradient(0deg, #baa7b7, #83859d);
     text-decoration: none;
     color: gray;
