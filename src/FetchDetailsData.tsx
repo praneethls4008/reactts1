@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { TableState,DetailsState } from "./App"
 export const FetchDetailsData = (url:string, searchParam:URLSearchParams, dispatcher:React.Dispatch<{
     type: string; 
