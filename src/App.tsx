@@ -7,7 +7,9 @@ import { CreatePost } from './CreatePost';
 import { Details } from './Details';
 import { UserDetails } from './UserDetails';
 import { NotFound } from './NotFound';
-
+import { Provider } from 'react-redux';
+import { store } from './Store';
+import { ReduxElement } from './ReduxElement';
 export interface DetailsState extends Record<string, any>{
         "name": string,
         "age": number,
@@ -64,6 +66,7 @@ function App() {
     
       
     return(
+        <Provider store={store}>
         <contextProvider.Provider value={{tableState, dispatcher}}>
             <Nav/>
                 <Routes>
@@ -71,10 +74,12 @@ function App() {
                     <Route path='/details' element={<Details/>}/>
                     <Route path='/details/:id' element={<UserDetails/>}/>
                     <Route path='/create' element={<CreatePost/>}/>
+                    <Route path='/redux' element={<ReduxElement/>}/>
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
             <Footer/>
         </contextProvider.Provider>
+        </Provider>
     )
 }
 

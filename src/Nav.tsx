@@ -30,7 +30,7 @@ export const Nav = () => {
         <div className="Nav">
             <Link to='/'><h1>Navigation bar</h1></Link>
             <div className="NavLinks">
-                <Link className='NavLinkHref' to={'/'}>Home</Link>
+                <Link className='NavLinkHref' to={'/redux'}>Home</Link>
                 <div className='searchContainer'>
                     <input ref={inputRef} onMouseEnter={(e)=>console.log('mouseEnteredinp')} onMouseLeave={(e)=>console.log('mouseLeftinp')} className='searchInput' placeholder={'Search here'} value={search} onClick={()=>{setSearch('')}} onChange={e=>setSearch(e.target.value)} onKeyDown={searchHandler} />
                     {(search && data) && 
